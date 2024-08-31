@@ -59,12 +59,12 @@ body {
 }
 
 .main-section {
-  margin-top:8rem;
   margin-bottom: 3rem;
   min-height: 80vh;
   display:flex;
   flex-direction:column;
   align-items: center;
+  justify-content: center;
   position:relative;
 }
 
@@ -172,6 +172,7 @@ body {
   align-items: center;
   padding: 5rem;
   min-height: 70vh;
+  margin-bottom: 5rem;
 }
 
 .parg-rose {
@@ -181,12 +182,15 @@ body {
 }
 
 .parg-title {
+  min-width: 290px;
   color: var(--main-clr);
   text-transform: uppercase;
   font-size: 2rem;
+  text-align: center;
 }
 
 .parg {
+  min-width: 300px;
   margin-top: 5rem;
   line-height: 1.8;
   font-size: 1.2rem;
@@ -248,6 +252,12 @@ body {
   transform:translate(2.5rem,-5rem) rotate(20deg);
 }
 
+/* .pics-container:hover > .pics-container__image-container {
+  width: 16.625rem; 
+  height: 16.625rem;
+  transform:translate(2.5rem,-5rem) rotate(20deg);
+}  */
+
 @media screen and (min-width:67.5rem){
   .pics-container:hover {
     margin:0rem;
@@ -259,6 +269,7 @@ body {
   --d: .8em;  /* the depth */
   --c: .8em; /* the cutout part */
   
+  width: 240px;
   color:var(--white);
   text-shadow:
    1px 1px 0px #f34156,
@@ -276,6 +287,7 @@ body {
 
 .footer {
   position: relative;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -299,10 +311,13 @@ body {
 }
 
 .footer-container {
+  width: 90%;
+  margin:auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 2rem;
 }
 
@@ -355,4 +370,54 @@ body {
   rotate: 310deg;
   right: 10px;
   margin: auto;
+}
+
+@media screen and (max-width:36.313rem){
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .link-icon {
+    height: 30px;
+    width: 30px;
+    margin-top:1rem;
+  }
+
+  .main-section {
+    margin-top:4rem;
+  }
+  .queen-name {
+    font-size:5.5rem;
+  }
+
+  .stupid-queen {
+    margin: 7rem 0rem 0rem 0rem !important;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:60.188rem) {
+  .stupid-queen {
+    margin:6rem 0rem 0rem 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .parg-rose {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .parg-rose {
+    width: 80%;
+  }
 }

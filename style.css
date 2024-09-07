@@ -47,9 +47,9 @@ body {
 }
 
 .crescent-and-rose {
-  width: 230px;
+  width: 150px;
   top: 300px;
-  right: -50px;
+  right: 0px;
 }
 
 .logo-container {
@@ -516,7 +516,7 @@ body {
   .crescent-and-rose {
     width: 150px;
     top: 350px;
-    right: -40px;
+    right: 0px;
   }
 
   .heart {

@@ -389,16 +389,12 @@ body {
 }
 
 .bg-image-footer-container {
-  height: 200px; 
-  width:200px;
+  position: relative;
+  height: 180px; 
+  width:300px;
   display:flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./imgs/image-bg-removebg-preview.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 2;
 }
 
 .mono-img,
@@ -407,6 +403,12 @@ body {
   position: relative;
   width: 100px;
   border-radius: 50%;
+}
+
+.circle-frame-footer {
+  margin-top: .5rem;
+  position: absolute;
+  width: 130px;
 }
 
 .footer-rose {
@@ -425,8 +427,8 @@ body {
   }
 
   .link-icon {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     margin-top: 1rem;
   }
 
